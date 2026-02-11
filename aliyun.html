@@ -85,6 +85,17 @@
         footer{background:var(--dark);color:#888;padding:40px 0;text-align:center;font-size:14px;margin-top:60px}
         footer a{color:var(--accent);text-decoration:none}
         footer a:hover{text-decoration:underline}
+        
+        /* Floating Contact Buttons */
+        .floating-contact-buttons{position:fixed;bottom:30px;right:30px;display:flex;flex-direction:column;gap:15px;z-index:999}
+        .floating-btn{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;transition:0.3s;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+        .telegram-btn{background:#0088cc;color:#fff}
+        .whatsapp-btn{background:#25D366;color:#fff}
+        .floating-btn:hover{transform:scale(1.1);box-shadow:0 6px 16px rgba(0,0,0,0.4)}
+        @media(max-width:768px){
+            .floating-contact-buttons{bottom:20px;right:20px;gap:10px}
+            .floating-btn{width:50px;height:50px;font-size:24px}
+        }
         /* Mobile Navigation Optimization */
         @media(max-width:768px){
             .nav-menu{font-size:12px}

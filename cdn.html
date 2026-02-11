@@ -74,7 +74,19 @@
         .cta-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:50px;font-size:16px;font-weight:600;text-decoration:none;transition:0.3s}
         .cta-btn.primary{background:var(--cdn-green);color:#fff}
         .cta-btn.secondary{background:transparent;border:2px solid var(--cdn-green);color:var(--cdn-green)}
+        .cta-btn.whatsapp{background:#25D366;color:#fff}
         .cta-btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,200,83,0.3)}
+        
+        /* Floating Contact Buttons */
+        .floating-contact-buttons{position:fixed;bottom:30px;right:30px;display:flex;flex-direction:column;gap:15px;z-index:999}
+        .floating-btn{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;transition:0.3s;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+        .telegram-btn{background:#0088cc;color:#fff}
+        .whatsapp-btn{background:#25D366;color:#fff}
+        .floating-btn:hover{transform:scale(1.1);box-shadow:0 6px 16px rgba(0,0,0,0.4)}
+        @media(max-width:768px){
+            .floating-contact-buttons{bottom:20px;right:20px;gap:10px}
+            .floating-btn{width:50px;height:50px;font-size:24px}
+        }
         
         footer{background:var(--dark);padding:40px 5%;text-align:center;margin-top:60px}
         footer p{opacity:0.7;font-size:14px}
